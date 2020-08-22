@@ -1,0 +1,14 @@
+{
+    "name": "sync",
+    "version": "1.0",
+    "description": "sync information across laptops!",
+    "permissions": ["storage", "tabs", "activeTab","<all_urls>", "clipboardWrite", "clipboardRead"],
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js", "popup.js", "j.js", "s.js"]
+    }],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+  }
